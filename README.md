@@ -3,6 +3,7 @@
 ## This repository presents a comprehensive machine learning framework for predicting:
 
 Compressive Strength (MPa)
+
 Flexural Strength (MPa)
 
 of gypsum-based composite materials reinforced with wheat straw and chemical additives.
@@ -10,29 +11,40 @@ of gypsum-based composite materials reinforced with wheat straw and chemical add
 ## The study evaluates and compares five advanced regression algorithms:
 
 Artificial Neural Network (ANN)
+
 Gaussian Process Regression (GPR)
+
 Random Forest (RF)
+
 Extreme Gradient Boosting (XGBoost)
+
 Support Vector Machine (SVM)
 
-=================================================
+
 ## INPUT FEATURES
-=================================================
+
 The following material parameters are used as model inputs:
 
 Gypsum Strength
+
 Gypsum Quantity
+
 Water Quantity
+
 Water-to-Gypsum Ratio
+
 Wheat Straw Content
+
 Calcium Chloride (CaCl2)
+
 Calcium Hydroxide (Ca(OH)2)
 
-===================================================
+
 ## TARGET VARIABLES
-===================================================
+
 
 Compressive Strength (MPa)
+
 Flexural Strength (MPa)
 
 Note:
@@ -45,58 +57,77 @@ Missing values must be removed before training. All variables must be numeric.
 Artificial Neural Network (ANN)
 ===============================
 Fully connected feedforward network
+
 Non-linear activation functions
+
 Optimized via backpropagation
 
 
 Gaussian Process Regression (GPR)
 =================================
 RBF kernel
+
 Probabilistic regression
+
 Provides uncertainty estimation
 
 Random Forest (RF)
 =================================
 Ensemble of decision trees
+
 Bagging-based approach
+
 Robust to overfitting
 
 XGBoost
 ================================
 Gradient boosting framework
+
 Regularized boosting
+
 High predictive performance
 
 Support Vector Machine (SVM)
 ========================================
 Support Vector Regression (SVR) with RBF kernel
+
 Standardized input features
+
 Effective in high-dimensional spaces
 
 MODEL EVALUATION METRICS
 ===============================================
 Each model is evaluated using:
+
 Mean Squared Error (MSE)
+
 Root Mean Squared Error (RMSE)
+
 Mean Absolute Error (MAE)
+
 Coefficient of Determination (R2)
 
 An 80/20 train-test split is used with a fixed random seed for reproducibility.
 
-=======================================================================
+
 VISUALIZATIONS GENERATED
-=========================================================================
+===============================================
 
 The Python script produces:
+
 Learning Curves (R2 vs Training Size)
+
 Actual vs Predicted plots
+
 ±10% and ±20% error bands
+
 Prediction error distribution plots
+
 Permutation feature importance plots
 
-=======================================================================
+
 ## HOW TO USE THE PYTHON FILE
-=======================================================================
+
 
 Follow the steps below to run the project properly.
 
@@ -110,22 +141,30 @@ Required Format of data.csv
 
 The CSV file must contain the following column names EXACTLY as written:
 
-==============
+
 Input Columns:
-===============
+===============================================
 
 Gypsum Strength
+
 Gypsum Quantity
+
 Water Quantity
+
 Water-to-Gypsum Ratio
+
 Wheat Straw Content
+
 Calcium Chloride
+
 Calcium Hydroxide
 
-==============
+
 Output Columns:
-================
+===============================================
+
 Compressive Strength
+
 Flexural Strength
 
 Important:
