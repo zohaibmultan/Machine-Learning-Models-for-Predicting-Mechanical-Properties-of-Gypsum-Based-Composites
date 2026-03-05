@@ -36,7 +36,6 @@ Compressive Strength (MPa)
 Flexural Strength (MPa)
 
 Note:
-
 Missing values must be removed before training. All variables must be numeric.
 
 ================================================================================
